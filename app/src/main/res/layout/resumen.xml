@@ -38,6 +38,8 @@
         android:id="@+id/textView2"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.3"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:maxLines = "1000"
+        android:scrollbars = "vertical"/>
 
 </LinearLayout>

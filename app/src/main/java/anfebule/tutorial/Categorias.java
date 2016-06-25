@@ -126,9 +126,9 @@ public class Categorias extends AppCompatActivity {
 
             for (String savedApp: setApps1){
                 String[] split = savedApp.split(";");
-                listApps.add(split[1]);
-                listImages.add(split[2]);
-                listSummary.add(split[3]);
+                listApps.add(split[0]);
+                listImages.add(split[1]);
+                listSummary.add(split[2]);
             }
 
             ArrayAdapter<String> adapter = new ArrayAdapter<>(Categorias.this, android.R.layout.simple_list_item_1, listApps);

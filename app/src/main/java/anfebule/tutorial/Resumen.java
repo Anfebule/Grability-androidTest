@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -41,6 +42,7 @@ public class Resumen extends AppCompatActivity {
         final ImageView iv = (ImageView) findViewById(R.id.imageView2);
         TextView tv = (TextView) findViewById(R.id.textView);
         TextView tv1 = (TextView) findViewById(R.id.textView2);
+        tv1.setMovementMethod(new ScrollingMovementMethod());
 
         //Se obtiene la imagen de la URL y se carga al contenedor
         new AsyncTask<Void, Void, Void>() {
